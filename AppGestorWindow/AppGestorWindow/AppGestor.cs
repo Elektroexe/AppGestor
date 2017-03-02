@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,12 @@ using System.Windows.Forms;
 
 namespace AppGestorWindow
 {
-    public partial class Form1 : Form
+    public partial class AppGestor : MetroForm
     {
-        public Form1()
+        public AppGestor()
         {
             InitializeComponent();
+            
         }
     }
 }
