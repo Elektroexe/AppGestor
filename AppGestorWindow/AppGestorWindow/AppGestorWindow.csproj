@@ -92,6 +92,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelAppGestor\ModelAppGestor.csproj">
+      <Project>{f3e92220-aefa-4780-98d4-c10e7f54a7ae}</Project>
+      <Name>ModelAppGestor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
