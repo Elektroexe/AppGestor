@@ -64,10 +64,19 @@
     <Compile Include="AppGestor.Designer.cs">
       <DependentUpon>AppGestor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPruebaEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPruebaEntity.Designer.cs">
+      <DependentUpon>FormPruebaEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AppGestor.resx">
       <DependentUpon>AppGestor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPruebaEntity.resx">
+      <DependentUpon>FormPruebaEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelAppGestor\ModelAppGestor.csproj">
+      <Project>{f3e92220-aefa-4780-98d4-c10e7f54a7ae}</Project>
+      <Name>ModelAppGestor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
