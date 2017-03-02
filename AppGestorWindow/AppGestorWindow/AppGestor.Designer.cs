@@ -30,7 +30,9 @@ namespace AppGestorWindow
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvAppInstalled = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbAppSearch = new MetroFramework.Controls.MetroTextBox();
             this.tcAppCategories = new MetroFramework.Controls.MetroTabControl();
             this.tpAppInternet = new MetroFramework.Controls.MetroTabPage();
@@ -43,7 +45,7 @@ namespace AppGestorWindow
             this.dgvAppProgramacion = new System.Windows.Forms.DataGridView();
             this.tpAppJuegos = new MetroFramework.Controls.MetroTabPage();
             this.dgvAppJuegos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAppInstalled)).BeginInit();
+            this.dgvAppInstalled = new MetroFramework.Controls.MetroGrid();
             this.tcAppCategories.SuspendLayout();
             this.tpAppInternet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppInternet)).BeginInit();
@@ -55,15 +57,8 @@ namespace AppGestorWindow
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppProgramacion)).BeginInit();
             this.tpAppJuegos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppJuegos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAppInstalled)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvAppInstalled
-            // 
-            this.dgvAppInstalled.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAppInstalled.Location = new System.Drawing.Point(23, 63);
-            this.dgvAppInstalled.Name = "dgvAppInstalled";
-            this.dgvAppInstalled.Size = new System.Drawing.Size(300, 642);
-            this.dgvAppInstalled.TabIndex = 0;
             // 
             // tbAppSearch
             // 
@@ -234,19 +229,62 @@ namespace AppGestorWindow
             this.dgvAppJuegos.Size = new System.Drawing.Size(979, 538);
             this.dgvAppJuegos.TabIndex = 2;
             // 
+            // dgvAppInstalled
+            // 
+            this.dgvAppInstalled.AllowUserToResizeRows = false;
+            this.dgvAppInstalled.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvAppInstalled.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvAppInstalled.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvAppInstalled.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAppInstalled.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAppInstalled.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAppInstalled.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvAppInstalled.EnableHeadersVisualStyles = false;
+            this.dgvAppInstalled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dgvAppInstalled.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgvAppInstalled.Location = new System.Drawing.Point(36, 74);
+            this.dgvAppInstalled.Name = "dgvAppInstalled";
+            this.dgvAppInstalled.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAppInstalled.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvAppInstalled.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvAppInstalled.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAppInstalled.Size = new System.Drawing.Size(294, 627);
+            this.dgvAppInstalled.TabIndex = 5;
+            this.dgvAppInstalled.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentDoubleClick);
+            // 
             // AppGestor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1366, 728);
+            this.Controls.Add(this.dgvAppInstalled);
             this.Controls.Add(this.tcAppCategories);
             this.Controls.Add(this.tbAppSearch);
-            this.Controls.Add(this.dgvAppInstalled);
             this.Name = "AppGestor";
             this.Text = "AppGestor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AppGestor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAppInstalled)).EndInit();
             this.tcAppCategories.ResumeLayout(false);
             this.tpAppInternet.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppInternet)).EndInit();
@@ -258,13 +296,12 @@ namespace AppGestorWindow
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppProgramacion)).EndInit();
             this.tpAppJuegos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppJuegos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAppInstalled)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvAppInstalled;
         private MetroTextBox tbAppSearch;
         private MetroTabPage tpAppInternet;
         private MetroTabPage tpAppOfimatica;
@@ -277,6 +314,7 @@ namespace AppGestorWindow
         private System.Windows.Forms.DataGridView dgvAppOfimatica;
         private System.Windows.Forms.DataGridView dgvAppProgramacion;
         private System.Windows.Forms.DataGridView dgvAppJuegos;
+        private MetroGrid dgvAppInstalled;
     }
 }
 
