@@ -245,6 +245,7 @@ namespace AppGestorWindow
             this.Name = "AppGestor";
             this.Text = "AppGestor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AppGestor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppInstalled)).EndInit();
             this.tcAppCategories.ResumeLayout(false);
             this.tpAppInternet.ResumeLayout(false);

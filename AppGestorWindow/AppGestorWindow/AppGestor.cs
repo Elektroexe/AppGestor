@@ -1,4 +1,6 @@
 ﻿using MetroFramework.Forms;
+using ModelAppGestor.Business;
+using ModelAppGestor.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +15,19 @@ namespace AppGestorWindow
 {
     public partial class AppGestor : MetroForm
     {
+        private cProgramas ctlrPrograma = new cProgramas();
+        private BindingList<ProgramaDTO> programasInstalados;
+
         public AppGestor()
         {
             InitializeComponent();
             
+        }
+
+        private void AppGestor_Load(object sender, EventArgs e)
+        {
+            programasInstalados = ctlrPrograma.GetAllProgramas();
+            dgvAppInstalled.DataSource = programasInstalados;
         }
     }
 }
