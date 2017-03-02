@@ -231,6 +231,7 @@ namespace AppGestorWindow
             // 
             // dgvAppInstalled
             // 
+            this.dgvAppInstalled.AllowUserToAddRows = false;
             this.dgvAppInstalled.AllowUserToResizeRows = false;
             this.dgvAppInstalled.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvAppInstalled.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -257,7 +258,9 @@ namespace AppGestorWindow
             this.dgvAppInstalled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgvAppInstalled.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvAppInstalled.Location = new System.Drawing.Point(36, 74);
+            this.dgvAppInstalled.MultiSelect = false;
             this.dgvAppInstalled.Name = "dgvAppInstalled";
+            this.dgvAppInstalled.ReadOnly = true;
             this.dgvAppInstalled.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
@@ -269,7 +272,7 @@ namespace AppGestorWindow
             this.dgvAppInstalled.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvAppInstalled.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvAppInstalled.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAppInstalled.Size = new System.Drawing.Size(294, 627);
+            this.dgvAppInstalled.Size = new System.Drawing.Size(281, 627);
             this.dgvAppInstalled.TabIndex = 5;
             this.dgvAppInstalled.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentDoubleClick);
             // 

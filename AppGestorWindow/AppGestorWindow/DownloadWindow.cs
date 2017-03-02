@@ -17,6 +17,7 @@ namespace AppGestorWindow
         public DownloadWindow(ProgramaDTO program)
         {
             InitializeComponent();
+            InitPaths(program);
             this.CenterToScreen();
         }
 
