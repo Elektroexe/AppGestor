@@ -8,9 +8,9 @@ using ModelAppGestor.Data;
 using System.ComponentModel;
 using ModelAppGestor.Model;
 
-namespace ModelAppGestor.Bussiness
+namespace ModelAppGestor.Business
 {
-    class cCategoria
+    public class cCategoria
     {
         public BindingList<CategoriaDTO> GetAllCategoria()
         {

@@ -51,8 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bussiness\cCategoria.cs" />
-    <Compile Include="Bussiness\cProgramas.cs" />
+    <Compile Include="Business\cCategoria.cs" />
+    <Compile Include="Business\cProgramas.cs" />
     <Compile Include="Data\CategoriaDTO.cs" />
     <Compile Include="Data\ProgramaDTO.cs" />
     <Compile Include="Model\AppGestor.Context.cs">

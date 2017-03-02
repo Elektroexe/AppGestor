@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/AppGestorWindow/AppGestorWindow/FormPruebaEntity.resx
+/AppGestorWindow/AppGestorWindow/FormPruebaEntity.Designer.cs
+/AppGestorWindow/AppGestorWindow/FormPruebaEntity.cs
