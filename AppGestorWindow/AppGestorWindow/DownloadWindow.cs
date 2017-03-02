@@ -30,7 +30,9 @@ namespace AppGestorWindow
 
         private void DownloadWindow_Load(object sender, EventArgs e)
         {
+
             Thread.Sleep(1000);
+
             StartDownload();
         }
 

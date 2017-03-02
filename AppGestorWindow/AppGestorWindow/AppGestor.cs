@@ -71,6 +71,8 @@ namespace AppGestorWindow
                 pog.VERSION = dgvAppInstalled.Rows[e.RowIndex].Cells["VERSION"].Value.ToString();
                 pog.INSTALADO = Boolean.Parse(dgvAppInstalled.Rows[e.RowIndex].Cells["INSTALADO"].Value.ToString());
                 DownloadWindow form = new DownloadWindow(pog);
+
+
                 form.ShowDialog();
 
 
