@@ -17,7 +17,7 @@ namespace ModelAppGestor.Business
             try
             {
                 List<ProgramaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
                 {
                     query = db.PROGRAMAs
                         .OrderBy(a => a.NOMBRE)
@@ -48,7 +48,7 @@ namespace ModelAppGestor.Business
             try
             {
                 List<ProgramaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
                 {
                     query = db.PROGRAMAs
                         .OrderBy(a => a.NOMBRE)
@@ -81,7 +81,7 @@ namespace ModelAppGestor.Business
             try
             {
                 List<ProgramaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
                 {
                     query = db.PROGRAMAs
                         .OrderBy(a => a.NOMBRE)
@@ -113,7 +113,7 @@ namespace ModelAppGestor.Business
             try
             {
                 List<ProgramaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
                 {
                     query = db.PROGRAMAs
                         .OrderBy(a => a.NOMBRE)

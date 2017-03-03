@@ -17,8 +17,8 @@ namespace ModelAppGestor.Business
             try
             {
                 List<CategoriaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
-                {
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
+                    {
                     query = db.CATEGORIAs
                         .OrderBy(a => a.NOMCATEGORIA)
                         .Select(a => new CategoriaDTO
@@ -42,7 +42,7 @@ namespace ModelAppGestor.Business
             try
             {
                 List<CategoriaDTO> query;
-                using (GestorDeAppsEntities db = new GestorDeAppsEntities())
+                GestorDeAppsEntities db = new GestorDeAppsEntities();
                 {
                     query = db.CATEGORIAs
                         .OrderBy(a => a.NOMCATEGORIA)

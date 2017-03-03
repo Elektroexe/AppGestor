@@ -10,22 +10,31 @@
 namespace ModelAppGestor.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class GestorDeAppsEntities : DbContext
+
+    public class GestorDeAppsEntities //: DbContext
     {
         public GestorDeAppsEntities()
-            : base("name=GestorDeAppsEntities")
+            //: base("name=GestorDeAppsEntities")
         {
+            data = new StaticData();
+            PROGRAMAs = data.Programas;
+            CATEGORIAs = data.Categorias;
         }
-    
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
-    
-        public virtual DbSet<CATEGORIA> CATEGORIAs { get; set; }
-        public virtual DbSet<PROGRAMA> PROGRAMAs { get; set; }
+
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    throw new UnintentionalCodeFirstException();
+        //}
+
+        //public virtual DbSet<CATEGORIA> CATEGORIAs { get; set; }
+        //public virtual DbSet<PROGRAMA> PROGRAMAs { get; set; }
+
+        public StaticData data;
+        public List<PROGRAMA> PROGRAMAs;
+        public List<CATEGORIA> CATEGORIAs;
+
     }
 }
