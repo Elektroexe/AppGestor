@@ -14,7 +14,7 @@ namespace ModelAppGestor
             new PROGRAMA
             {
                 CODIGO = 7,
-                CODIGOCAT = 2,
+                CODIGOCAT = 3,
                 NOMBRE = "Open Office",
                 PLATAFORMA = "Windows",
                 VERSION = "12345",
@@ -25,7 +25,7 @@ namespace ModelAppGestor
              new PROGRAMA
             {
                 CODIGO = 8,
-                CODIGOCAT = 2,
+                CODIGOCAT = 3,
                 NOMBRE = "Kingston Office",
                 PLATAFORMA = "Windows",
                 VERSION = "12345",
@@ -36,7 +36,7 @@ namespace ModelAppGestor
               new PROGRAMA
             {
                 CODIGO = 9,
-                CODIGOCAT = 2,
+                CODIGOCAT = 3,
                 NOMBRE = "Polaris Office",
                 PLATAFORMA = "Windows",
                 VERSION = "12345",
