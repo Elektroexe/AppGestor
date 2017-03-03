@@ -117,7 +117,7 @@ namespace ModelAppGestor.Business
                 {
                     query = db.PROGRAMAs
                         .OrderBy(a => a.NOMBRE)
-                        .Where(a => a.CODIGOCAT == codigoCat)
+                        .Where(a => a.CODIGOCAT == codigoCat && a.INSTALADO == false )
                         .Select(a => new ProgramaDTO
                         {
                             NOMBRE = a.NOMBRE,
