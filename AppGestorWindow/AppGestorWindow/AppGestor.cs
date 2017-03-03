@@ -89,20 +89,20 @@ namespace AppGestorWindow
         {
             if (e.RowIndex >= 0)
             {
+                DataGridView dgv = (DataGridView)sender;
                 ProgramaDTO prog = new ProgramaDTO();
-                prog.CODIGO = (int)dgvAppInstalled.Rows[e.RowIndex].Cells["CODIGO"].Value;
-                prog.CODIGOCAT = (int)dgvAppInstalled.Rows[e.RowIndex].Cells["CODIGOCAT"].Value;
-                prog.DESCARGAS = (int)dgvAppInstalled.Rows[e.RowIndex].Cells["DESCARGAS"].Value;
-                prog.HOST = dgvAppInstalled.Rows[e.RowIndex].Cells["HOST"].Value.ToString();
-                prog.NOMBRE = dgvAppInstalled.Rows[e.RowIndex].Cells["NOMBRE"].Value.ToString();
-                prog.PLATAFORMA = dgvAppInstalled.Rows[e.RowIndex].Cells["PLATAFORMA"].Value.ToString();
-                prog.VERSION = dgvAppInstalled.Rows[e.RowIndex].Cells["VERSION"].Value.ToString();
-                prog.INSTALADO = Boolean.Parse(dgvAppInstalled.Rows[e.RowIndex].Cells["INSTALADO"].Value.ToString());
+                prog.CODIGO = (int) dgv.Rows[e.RowIndex].Cells["CODIGO"].Value;
+                prog.CODIGOCAT = (int) dgv.Rows[e.RowIndex].Cells["CODIGOCAT"].Value;
+                prog.DESCARGAS = (int) dgv.Rows[e.RowIndex].Cells["DESCARGAS"].Value;
+                prog.HOST = dgv.Rows[e.RowIndex].Cells["HOST"].Value.ToString();
+                prog.NOMBRE = dgv.Rows[e.RowIndex].Cells["NOMBRE"].Value.ToString();
+                prog.PLATAFORMA = dgv.Rows[e.RowIndex].Cells["PLATAFORMA"].Value.ToString();
+                prog.VERSION = dgv.Rows[e.RowIndex].Cells["VERSION"].Value.ToString();
+                prog.INSTALADO = Boolean.Parse(dgv.Rows[e.RowIndex].Cells["INSTALADO"].Value.ToString());
                 DownloadWindow form = new DownloadWindow(prog);
                 form.ShowDialog();
             }
         }
-        
     }
 }
 
